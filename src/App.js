@@ -1,22 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Button from './Button'
+import Poem from './Poem'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+      <h1>Squirrel Poems</h1>
+      <div>
+      <div>
+      <Poem />
+      </div>
+      <div >
+      <Button />
+      </div>
+      </div>
+            <p>This app creates poems from the <a
+          href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw"
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+        2018 Central Park Squirrel Census - Squirrel Data   
+        </a> Hosted by <a 
+          href="https://opendata.cityofnewyork.us/"
+          className="App-link"
+        > NYC Open Data</a>.
+      </p>
       </header>
     </div>
   );
