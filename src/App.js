@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Button from './Button'
 import Poem from './Poem'
 
 function App() {
@@ -10,14 +9,9 @@ function App() {
       <header className="App-header">
       <h1>Squirrel Poems</h1>
       <div>
-      <div>
       <Poem />
       </div>
-      <div >
-      <Button />
-      </div>
-      </div>
-            <p>This app creates poems from the <a
+            <p style={{ fontSize: '16px' }}>This app creates poems from the <a
           href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw"
           className="App-link"
         >
