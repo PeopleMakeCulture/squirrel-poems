@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import squirrel_data from "./squirrel-data.json"
 
+// TODO: create a way to "stash" a poem
 const Poem = () => {
 
-  // let num_stanzas = 1;
-  const poems = [`
-        tree branches
-        walking
+  let NUM_STANZAS = 3
+  let ATTR_LIST = ['specific_location','other_activities','color_notes']
+
+  const seed_poems = [`
+        Tree branches
+        Walking
         White ring on short tail
     `, `
-        bringing green leaves to nest
-        on fence
+        Bringing green leaves to nest
+        On fence
         Very far, so appx
     `];
 
-  const [poem, setPoem] = useState(poems[1]);
+  const [poem, setPoem] = useState(seed_poems[Math.round(Math.random())]);
 
-  const test_poem = squirrel_data[0]['unique_squirrel_id'];
-
-
-  function sample(key) {
+  const sample = (key) => {
 
     let idx = 0
     let line = ''
@@ -33,22 +33,28 @@ const Poem = () => {
   }
 
   // TODO: other string manipulations
-  function clean(str){
+  const clean = (str) => {
     return str.replace(/^\w/, (match) => match.toUpperCase());;
-
   }
 
-  function generate_poem(){
+  // TODO: Randomly sample from arg list, so order changes
+  // TODO: Make sure there are no repeats for > 1 stanza
+  const generate_poem = (args, num_stanzas) => {
+
     let poem = ''
-      poem += clean(sample('specific_location')) + '\n'
-      poem += clean(sample('other_activities')) + '\n'
-      poem += clean(sample('color_notes')) + '\n'
+
+      for (let stanza = 0; stanza < num_stanzas; stanza++){
+        for (const arg of args){
+          poem += clean(sample(arg)) + '\n';
+        }
+        poem += '\n'
+      }
+    
     return poem
   }
 
   const handleClick = () => {
-    console.log("Click")
-    setPoem((prevPoem) => generate_poem());
+    setPoem((prevPoem) => generate_poem(ATTR_LIST, NUM_STANZAS));
   }
 
   return (
