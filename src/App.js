@@ -9,7 +9,7 @@ function App() {
       <div>
       <Poem />
       </div>
-            <p style={{ fontSize: '16px' }}>This app creates poems from the <a
+            <p style={{ fontSize: '16px' }}>This app was created at the <a href="https://www.recurse.com/" className="App-link">Recurse Center</a> from the <a
           href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw"
           className="App-link"
         >
