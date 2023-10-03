@@ -13,11 +13,11 @@ function App() {
           href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw"
           className="App-link"
         >
-        2018 Central Park Squirrel Census - Squirrel Data   
-        </a> Hosted by <a 
+        2018 Central Park Squirrel Census   
+        </a> dataset hosted by <a 
           href="https://opendata.cityofnewyork.us/"
           className="App-link"
-        > NYC Open Data </a>.
+        > NYC Open Data</a>.
       </p>
       </header>
     </div>

@@ -4,7 +4,7 @@ import squirrel_data from "./squirrel-data.json"
 // TODO: create a way to "stash" a poem
 const Poem = () => {
 
-  let NUM_STANZAS = 3
+  let NUM_STANZAS = 1
   let ATTR_LIST = ['specific_location','other_activities','color_notes']
 
   const seed_poems = [`
