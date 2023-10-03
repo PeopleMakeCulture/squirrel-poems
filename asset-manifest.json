@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/squirrel-poems/static/css/main.a242a3ed.css",
-    "main.js": "/squirrel-poems/static/js/main.d3e46ff2.js",
+    "main.js": "/squirrel-poems/static/js/main.3fc0f80e.js",
     "static/js/787.c5dbec8e.chunk.js": "/squirrel-poems/static/js/787.c5dbec8e.chunk.js",
     "index.html": "/squirrel-poems/index.html",
     "main.a242a3ed.css.map": "/squirrel-poems/static/css/main.a242a3ed.css.map",
-    "main.d3e46ff2.js.map": "/squirrel-poems/static/js/main.d3e46ff2.js.map",
+    "main.3fc0f80e.js.map": "/squirrel-poems/static/js/main.3fc0f80e.js.map",
     "787.c5dbec8e.chunk.js.map": "/squirrel-poems/static/js/787.c5dbec8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a242a3ed.css",
-    "static/js/main.d3e46ff2.js"
+    "static/js/main.3fc0f80e.js"
   ]
 }
