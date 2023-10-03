@@ -17,7 +17,7 @@ function App() {
         </a> Hosted by <a 
           href="https://opendata.cityofnewyork.us/"
           className="App-link"
-        > NYC Open Data</a>.
+        > NYC Open Data </a>.
       </p>
       </header>
     </div>
